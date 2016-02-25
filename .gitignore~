@@ -27,9 +27,5 @@
 *.out
 *.app
 
-#Backup files
-*.cpp~
-*.h~
-
 #Main
 Main.cpp
