@@ -9,9 +9,23 @@ class Shared_Numerical:
 private:
   T val;
 public:
-  Shared_Numerical();
-  T get(); //returns the value of the variable
-  void set(T val); //sets value of the variable
+  Shared_Numerical(T var)
+  {
+	  val = var;
+  };
+  Shared_Numerical()
+  {
+
+  };
+  T get()
+  {
+      return val;
+  };
+
+  void set(T val)
+  {
+      this->val = val;
+  };
   
   //OPERATORS
     //will not work with non-numerical values
@@ -30,8 +44,16 @@ public:
    	}; //shorthand multiplication
     void operator/= (Shared_Numerical& var)
     {
-    	set(val/var);
+    	set(val / var.get());
 	}; //shorthand division
+    void operator%= (Shared_Numerical& var)
+	{
+    	set(val%var.get());
+	};
+    void operator++()
+	{
+    	val++;
+	};
     T operator+ (Shared_Numerical& var)
     {
     	return val + var.get();
@@ -54,7 +76,7 @@ public:
 	}; //modulus
     bool operator== (Shared_Numerical& var)
 	{
-    	if(val == var)
+    	if(val == var.get())
     	{
     		return true;
     	}else{
