@@ -31,6 +31,7 @@
 #Backup files
 *.cpp~
 *.h~
+*~
 
 #Main
 Main.cpp
@@ -42,3 +43,6 @@ Debug/*
 *.project
 *.cproject
 /Debug/
+
+#Java
+
