@@ -1,5 +1,7 @@
 # MIST Computing
 
+###Master Build Status: [![Build Status](https://travis-ci.org/Ahmad-Bamba/MIST-Computing.svg?branch=master)](https://travis-ci.org/Ahmad-Bamba/MIST-Computing)
+
 Mist Computing is an easy to implement [distributed computing](https://en.wikipedia.org/wiki/Distributed_computing) library. This C++ library would allow the programmer to distribute complex tasks over a network of computers.
 
 Planned features include:
