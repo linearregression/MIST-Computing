@@ -32,7 +32,7 @@
 *.cpp~
 *.h~
 *~
-*.save
+*save
 
 #Main
 Main.cpp
