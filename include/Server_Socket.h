@@ -1,17 +1,17 @@
 #pragma once
 
-#include <boost/asio.hp>
+#include <boost/asio.hpp>
 
 template <class T>
 class Server_Socket{
 public:
-    Server_Socket(boost::asio::io_service io_service, int port)
+    Server_Socket(boost::asio::io_service io_service, int port);
     boost::asio::io_service getIOService();
 private:
     boost::asio::io_service ios;
     int io_port;
 protected:
-    void start_server()
-    boost::asio::io_service getIOService();
+    void start_server();
+    //boost::asio::io_service getIOService();
 
 };

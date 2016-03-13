@@ -31,6 +31,7 @@
 #Backup files
 *.cpp~
 *.h~
+*save
 
 #Main
 Main.cpp

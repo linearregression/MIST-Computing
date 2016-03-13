@@ -3,6 +3,7 @@
 *.lo
 *.o
 *.obj
+*.0
 
 # Precompiled Headers
 *.gch
@@ -27,5 +28,17 @@
 *.out
 *.app
 
+#Backup files
+*.cpp~
+*.h~
+
 #Main
 Main.cpp
+
+#Debug
+Debug/*
+
+#Project files
+*.project
+*.cproject
+/Debug/

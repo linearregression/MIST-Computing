@@ -2,7 +2,7 @@
 #include <boost/asio.hpp>
 
 template <class T>
-Sever_Soclet<T>::Server_Socket(){
+Server_Socket<T>::Server_Socket(boost::asio::io_service io_service, int port){
     
 }
 
