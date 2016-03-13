@@ -3,22 +3,31 @@
 #include <vector>
 #include <string>
 
-#include <boost/asio.hpp>
 #include "Mist.h"
 
-namespace Mist::Machine{
-    class Basic_Network: public Mist{
-    private:
-        int id;
-        std::string ip;
+namespace Mist{
+    namespace Machine{
+        class Basic_Network{
+        private:
+            //fields
+            NETWORK_STATE state;
+            std::string ip;
+            std::string server_name;
+            std::vector<char> data; //change to void* eventually
+            bool isClientRunning;
+            bool isServerRunning;
 
-    public:
-        Basic_Network(int id, string ip);
-        void writeToFile(std::string data, std::string filename, std::string extention);
-        //void writeToFile(std::vector<String> data, std::string filename, std::string extention); //TODO: This won't work probably maybe idk
+            //other
+            void open();
 
-        void queueFile(std::string filename);
-};
+        public:
+            Basic_Network(NETWORK_STATE state, Mist::Machine::computer comp);
+
+            void queueFile(std::string filename);
+            void killServer();
+            void killClient();
+
+            std::vector<char> getData();
+        };
+    }
 }
-
-
