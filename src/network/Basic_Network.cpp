@@ -1,7 +1,7 @@
 #include "../../include/Basic_Network.h"
 #include <boost/asio.hpp>
 
-using boost::asio::ip::tcp;
+using boost::asio;
 
 namespace Mist{
     namespace Machine{

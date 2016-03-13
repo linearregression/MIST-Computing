@@ -1,6 +1,7 @@
 #pragma once
 
 #include <string>
+#include <stdlib.h>
 
 namespace Mist{
     void writeToFile(std::string data, std::string filename, std::string extention){ //TODO: manage file location!
