@@ -7,7 +7,7 @@ addons:
     packages:
         - g++-4.8
         - libboost-dev
-        - libboost1.54-dev
+        - libboost1.49-dev
 install:
     - CC=gcc-4.8 CXX=g++-4.8
 script: g++ Mist.cpp include/*.h src/*/*.cpp -o test.o -lboost_system -pthread
