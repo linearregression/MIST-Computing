@@ -32,6 +32,7 @@
 *.cpp~
 *.h~
 *~
+*.save
 
 #Main
 Main.cpp
@@ -45,7 +46,7 @@ Debug/*
 /Debug/
 
 #Java
-*.MF
+*.class
 
 #Test files
 *.txt
