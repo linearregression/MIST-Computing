@@ -5,7 +5,7 @@ addons:
     sources:
     - ubuntu-toolchain-r-test
 install:
-    - sudo apt-get install g++-4.8
+    - sudo apt-get install gcc-4.8
     - sudo apt-get install libboost-dev
     - sudo apt-get install libboost-dbg
 script: g++ Mist.cpp include/*.h src/*/*.cpp -o test.o -lboost_system
