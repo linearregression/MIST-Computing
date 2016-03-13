@@ -1,10 +1,7 @@
 #pragma once
 
-class Mist{
-public:
-    
-private:
-    
-protected:
-    
-};
+namespace Mist{
+    namespace Machine{
+        
+    }
+}
