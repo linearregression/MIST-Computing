@@ -1,13 +1,16 @@
 language: cpp
 compiler: g++
+before-install:
+    - apt-add repository ppa:boost-latest/ppa
+    - apt-get update
+    - apt-get install libboost-*1.55-dev
 addons:
   apt:
     sources:
         - ubuntu-toolchain-r-test
     packages:
         - g++-4.8
-        - libboost-dev
-        - libboost-system-dev
+        - boost1.55
 install:
     - CC=gcc-4.8 CXX=g++-4.8
 script: g++ Mist.cpp include/*.h src/*/*.cpp -o test.o -lboost_system -pthread
