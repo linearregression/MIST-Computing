@@ -2,7 +2,6 @@
 #include <boost/asio.hpp>
 
 using boost::asio::ip::tcp;
-using boost::asio;
 
 namespace Mist{
     namespace Machine{
@@ -25,7 +24,7 @@ namespace Mist{
                 tcp::resolver::query query(server_name, "daytime");
                 tcp::resolver::iterator endpoint_iterator = resolver.resolve(query);
                 tcp::socket socket(io_service);
-                boost::asio::connect(socket, endpoint_iterator);
+                boost::asio::detail::socket_ops::connect(socket, endpoint_iterator);
 
                 std::cout << "Info: Client listening" << std::endl;
 
