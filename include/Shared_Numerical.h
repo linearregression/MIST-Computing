@@ -1,9 +1,11 @@
+#pragma once
+
 #include "Shared_Variable.h"
 
 //TODO only difference is that you can't use =
 
 template <class T>
-class Shared_Numerical: 
+class Shared_Numerical:
   public Shared_Variable //extends Shared_Variable
 {
 private:
@@ -26,7 +28,7 @@ public:
   {
       this->val = val;
   };
-  
+
   //OPERATORS
     //will not work with non-numerical values
     //Shared Variables
@@ -128,7 +130,7 @@ public:
         return false;
       }
     }; //test less than
-    
+
     //Regular Variables
     void operator+= (T var)
    	{
