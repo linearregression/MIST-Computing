@@ -1,5 +1,6 @@
 #include "../../include/Basic_Network.h"
 #include <boost/asio.hpp>
+#include <iostream>
 
 using boost::asio::ip::tcp;
 

@@ -1,14 +1,14 @@
 language: cpp
 compiler: g++
+before-install:
+    - chmod +x build.sh
 addons:
   apt:
     sources:
         - ubuntu-toolchain-r-test
-        - boost-latest
     packages:
-        - g++-4.8
-        - libboost-dev
-        - boost1.55
+	- g++-4.8
+	- libboost-dev
 install:
     - CC=gcc-4.8 CXX=g++-4.8
-script: g++ Mist.cpp include/*.h src/*/*.cpp -o test.o -lboost_system -pthread
+script: ./build.sh
