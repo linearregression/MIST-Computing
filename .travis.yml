@@ -9,6 +9,7 @@ addons:
     packages:
         - g++-4.8
         - libboost-dev
+        - libboost-system-dev
 install:
     - CC=gcc-4.8 CXX=g++-4.8
 script: ./build.sh

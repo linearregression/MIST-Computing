@@ -2,5 +2,5 @@ echo unpacking boost 1.59...
 tar -zxf boost_1_59_0.tar.gz
 echo done!
 echo compiling MIST Computing with boost 1.59...
-g++ Mist.cpp include/*.h src/*/*.cpp -o test.o -Iboost_1_59_0 -lboost_system -pthread
+g++ Mist.cpp include/*.h src/*/*.cpp -o test.o -Iboost_1_59_0 -pthread
 
