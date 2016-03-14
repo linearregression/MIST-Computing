@@ -51,3 +51,5 @@ Debug/*
 #Test files
 *.txt
 
+#boost
+boost*/
